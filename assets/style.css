@@ -107,10 +107,10 @@ h2 {
 
 .sub-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* use next line if available*/
     background: var(--header);
     border: groove 5px black;
-    border-radius: 15px;
+    border-radius: 15px; /* makes corners less sharp*/
     color: white;
     align-self: flex-start;
     font-size: 40px;
@@ -171,7 +171,7 @@ img {
 }
 
 #deployed-app {
-    position: relative;
+    position: relative; /* now text within container can be moved freely with absolute property*/
 }
 
 #deployed-app-image {
@@ -194,7 +194,7 @@ h3 {
 }
 
 #deployed-app-text {
-    position: absolute;
+    position: absolute; /* so I can move text freely*/
     top: 70%;
     left: 5%;
     background: var(--header);
@@ -292,3 +292,147 @@ hr {
     margin-right: 5%;
 }
 
+/* size of 992px or less the below changes will occur */
+@media screen and (max-width: 992px) { 
+    
+    header {
+        height: 64px;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding: 20px;
+        padding-left: 60px;
+    }
+
+    a {
+        font-size: 17.6px;
+    }
+
+    nav {
+        padding: .5%;
+    }
+
+    nav ul li a:hover {
+        font-size: 19.2px;
+    }
+
+    .hero {
+        height: 480px;
+    }
+
+    h2 {
+        width: 120px;
+        font-size: 24px;
+    }
+
+    .about-me-img-p p, #deployed-app-text p, .placeholder-text-1 p, .placeholder-text-2 p, p {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .about-me-img-p img, #deployed-app a img, .placeholder-image, {
+        max-width: 50%;
+    }
+}
+
+/* size of 768px or less the below changes will occur */
+@media screen and (max-width: 768px) {
+        
+    header {
+        height: 48px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 18px;
+        padding-left: 55px;
+    }
+
+    a {
+        font-size: 13.6px;
+    }
+
+    nav ul li a:hover {
+        font-size: 15.2px;
+    }
+
+    .hero {
+        height: 320px;
+    }
+
+    h2 {
+        width: 95px;
+        font-size: 20.8px;
+    }
+
+    .about-me-img-p p, #deployed-app-text p, .placeholder-text-1 p, .placeholder-text-2 p, .placeholder-text-3 p, p {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .about-me-img-p img, #deployed-app a img, .placeholder-image, {
+        max-width: 50%;
+    }
+}
+
+/* size of 576px or less the below changes will occur */
+@media screen and (max-width: 576px) {
+
+    header {
+        height: 32px;
+        justify-content: center;  
+        align-items: center;      
+    }
+
+    h1 {
+        font-size: 16px;
+        padding: 16px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 8.8px;
+    }
+
+    li {
+        margin-right: .25px;
+    }
+
+    nav ul li a:hover, a {
+        font-size: 13.6px;
+    }
+
+    .hero {
+        height: 160px;
+    }
+
+    h2 {
+        width: 75px;
+        font-size: 20px;
+    }
+
+    #deployed-app-text {
+        top: 70%;
+        left: 20%;
+    }
+
+    .placeholder-text-3 {
+        top: 55%;
+        left: 10%;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .about-me-img-p img, #deployed-app a img, .placeholder-image, {
+        max-width: 50%;
+    }
+}
