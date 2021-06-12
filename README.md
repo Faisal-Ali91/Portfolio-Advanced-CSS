@@ -22,7 +22,7 @@ The following elements were included in my page:
 
 ## Link to Deploy
 
-[Portfolio: Faisal Ali]()
+[Portfolio: Faisal Ali](https://faisal-ali91.github.io/Portfolio-Advanced-CSS/)
 
 ## Screenshot
 
