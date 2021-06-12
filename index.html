@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Faisal Ali</title>
+    <!-- Link to reset style sheet -->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <!-- Link to style sheet -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <nav>
+            <ul>
+                <!-- Anchor links to different sections of the webpage -->
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background photo of h1 header -->
+    <section class="hero" role="img" aria-label="nature image of walkway and water"> 
+
+        <h1>Faisal Ali</h1> <!-- h1 header sitting infornt of background photo -->
+
+    </section>
+    <hr>
+
+    <main>
+        
+        <!-- Section tag indicating section of content and id to tell anchor link where to go. Class to target paragraphs -->
+    <section id="about-me">
+        <div class="sub-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-me-img-p"><!-- Picture of avatar representing myself -->
+        <img src="./assets/images/bearded-man.jpg" alt="avatar of a bearded man">
+
+        <p>My name is Faisal Sabar Ali and I live in Birmingham, United Kingdom. I have spent most of my life in Birmingham
+            and have studied accounting but discovered it wasn't for me. I have worked in the civil service since 2016 and
+            it dawned on me during the COVID-pandemic that I need to gain skills in an industry that I have a passion for. I have
+            always been interested in coding and the world that it can create so I decided to enter this world.
+        </p>
+
+        <p>I started my Coding-Bootcamp course in May 2021 and so far I have completed the first unit of HTML and advanced CSS
+            and I am currently mid-way through my Javascript unit. I am currently studying intensively whilst working full-time
+            and running a household. My dream is to get a job in the Software-Development world at the conclusion of this bootcamp
+            or even during it. I believe that I am hard-working and have the ability to learn and then re-learn when more adequate
+            information arises.  
+        </p>
+    </div>
+    </section>
+
+    <hr>
+    
+<!-- work id to target whole section in CSS -->
+    <section id="work">
+        <!-- sub-header class to target multiple headings in CSS for this section specifically -->
+        <div class="sub-header"> <!-- to target the header for CSS -->
+            <h2>My Work</h2>
+        </div>
+
+        <div class="work-pictures">
+<!-- deployed-app section unique to placeholder section as more functions to be performed on deployed-app section-->
+            <div id="deployed-app">
+                <a target="_blank" href="https://faisal-ali91.github.io/Horiseon-Agency/">
+                <img id="deployed-app-image" src="./assets/images/horizon.jpg" alt="picture of horizon">
+                </a>
+                <div id="deployed-app-text">
+                    <h3>Horiseon-Agency</h3>
+                    <p>HTML, CSS</p>
+                </div>
+            </div>
+
+            <!-- the placeholder-app-section will be updated when I deploy more applications in the future -->
+            <div class="placeholder-app-section"> 
+
+                <div class="placeholder-app-group">
+                    <img class="placeholder-image" src="./assets/images/laptop-desk.jpg" alt="laptop on desk">
+                    <div class="placeholder-text-1">
+                        <h3>App - 2</h3>
+                        <p>App Info</p>
+                    </div>
+
+                    <img class="placeholder-image" src="./assets/images/brainstorming-table.jpg" alt="brainstorming at table">
+                    <div class="placeholder-text-2">
+                        <h3>App - 3</h3>
+                        <p>App Info</p>
+                    </div>
+                </div>
+
+                <div class="placeholder-app">
+                    <img class="placeholder-image" src="./assets/images/notepad-coffee.jpg" alt="notepad and coffee">
+                    <div class="placeholder-text-3">
+                        <h3>App - 4</h3>
+                        <p>App Info</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="contact-me">
+        
+        <div class="sub-header">
+            <h2>Contact Me</h2>
+        </div>
+
+        <div id="contact-info">
+            <a class="contact" target="_blank" href="https://github.com/Faisal-Ali91">Github</a>
+            <a class="contact" href="#">0751 396 3644</a>
+        </div>
+    </section>
+</main>
+
+</body>
+
+</html>

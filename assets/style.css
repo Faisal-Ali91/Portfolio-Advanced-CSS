@@ -1,0 +1,294 @@
+/* styling for all elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* variables for colour */
+:root {
+    --light-blue: rgb(0, 110, 255);
+    --dark-blue: rgba(0, 4, 255, 0.199);
+    --horiseon: #d9dcd6;
+    --header: #2a607c;
+}
+
+/* background colour for the body of the page */
+body {
+    background-color: var(--horiseon); /* background colour for webpage*/
+    font-family: monospace, 'Times New Roman', Times, serif; /* gives default font style for webpage with back-up fonts*/
+}
+
+header {
+    height: 88px; 
+    background: var(--header); /* background colour for header*/
+    display: flex; /* flex container expands items to fill available free space or shrinks them to prevent overflow*/
+    justify-content: space-evenly; /* spaces out nav elements*/
+    align-items: center; /* centres nav elements*/
+    padding: 20px; /* used to generate space around  element's content, inside of any defined borders*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: groove 5px black;
+}
+
+nav {
+    padding-top: 15px; /* used to generate space at top of  element's content, inside any defined borders*/
+    margin-right: 20px; /* used to generate space to the right of element, outside any defined borders*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px; /* change size of font*/
+    word-spacing: 20px; /* amount of space between words*/
+    white-space: nowrap; /* as the window shrinks smaller nav elements won't wrap onto another line*/
+}
+
+
+nav ul li {
+    display: inline-block; /* causes navigation links to appear on same line as opposed to serparate lines*/
+    margin-left: 60px; /* moves nav links away from the surrounding elements in towards the right*/
+}
+
+nav ul li a {
+    color: #ffffff; /* edits colour of text*/
+    text-decoration: none; /* removes default underline decoration*/
+    font-weight: 650; /* boldens the text*/
+    font-size: 30px; /* changes the font-size*/
+    padding: 20px; /* create space around element's content, inside of any defined borders*/
+    transition-property: font-size, font-weight; /* determines what transition-property should target*/
+    transition-duration: 2s; /* determines how long transition should take*/
+}
+
+nav ul li a:hover { /* when mouse is hovered over transition effect will occur*/
+    font-size: 50px; /* change font-size when mouse is hovered over*/
+    font-weight: 850; /* change font-weight when mouse is hovered over*/
+}
+
+/* targets both the anchor elements in the navigation bar as well as the anchor elements in the section with "contact-me" id*/
+#contact-info a{
+    color: #ffffff; /* edits colour of text*/
+    text-decoration: none; /* removes default underline decoration*/
+    font-weight: 650; /* boldens the text*/
+    font-size: 30px; /* changes the font-size*/
+    padding: 30px;
+}
+
+.hero {
+    display: flex; /* flex container expands items to fill available free space or shrinks them to prevent overflow*/
+    background-image: url(./images/background-picture.jpg); 
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    max-width: 100%;
+    height: 640px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+    background: var(--header);
+    padding: 24px;
+    padding-left: 65px;
+    align-self: flex-end; /* aligns h1 to bottom of flexbox*/
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: groove 5px black;
+    border-radius: 15px;
+}
+
+main section {
+    padding: 5%;
+}
+
+#about-me {
+    display: flex;
+}
+
+h2 {
+    width: 170px;
+    font-size: 36px;
+}
+
+.sub-header {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--header);
+    border: groove 5px black;
+    border-radius: 15px;
+    color: white;
+    align-self: flex-start;
+    font-size: 40px;
+    padding: 24px;
+    text-align: center;
+}
+
+.about-me-img-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-img-p img {
+    border: groove 5px black;
+    border-radius: 70px;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.about-me-img-p p {
+    padding: 1%;
+    margin: 1%;
+    background: var(--header);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    line-height: 1.25;
+    text-align: center;
+    border: groove 5px black;
+    border-radius: 15px;
+}
+
+img {
+    margin: 1%;
+    opacity: 0.85;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#work {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.work-pictures img:hover {
+    box-shadow: 0px 0px 50px 0px black;
+    opacity: 3;
+    transform: scale(1.10);
+}
+
+.work-pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+#deployed-app {
+    position: relative;
+}
+
+#deployed-app-image {
+    height: 450px;
+    width: 1075px;
+    border: groove 5px black;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.work-pictures p {
+    color: white;
+    font-size: 18px;
+    padding-top: 0.5%;
+}
+
+#deployed-app-text {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    background: var(--header);
+    padding: 1%;
+    border: groove 5px black;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.placeholder-app-section {
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.placeholder-app-group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.placeholder-image {
+    border: groove 5px black;
+    border-radius: 15px;
+    margin: 10px 15px 10px 15px;
+}
+
+.placeholder-text-1 {
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    background: var(--header);
+    padding: 1%;
+    border: groove 5px black;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.placeholder-text-2 {
+    position: absolute;
+    top: 70%;
+    right: -34%;
+    background: var(--header);
+    border: groove 5px black;
+    border-radius: 15px;
+    opacity: 0.7;
+    padding: 1%;
+}  
+
+.placeholder-app {
+    position: relative;
+    width: 500px;
+    height: 284.8px;
+    margin-left: 30%;
+}
+
+.placeholder-text-3 {
+    position: absolute;
+    top: 78%;
+    right: 72%;
+    background: var(--header);
+    border: groove 5px black;
+    border-radius: 15px;
+    opacity: 0.7;
+    padding: 1%;
+}
+
+#contact-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-info {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.contact {
+    border-bottom: groove 5px black;
+    border-radius: 40px;
+    padding: 1%;
+}
+
+#contact-info a {
+    background-color: var(--header);
+    color: white;
+    text-decoration: underline;
+}
+
+hr {
+    border: 5px solid var(--header);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
