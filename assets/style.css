@@ -334,7 +334,7 @@ hr {
         font-size: 20px;
     }
 
-    .about-me-img-p img, #deployed-app a img, .placeholder-image, {
+    .about-me-img-p img, #deployed-app a img, .placeholder-image {
         max-width: 50%;
     }
 }
@@ -377,7 +377,7 @@ hr {
         font-size: 16px;
     }
 
-    .about-me-img-p img, #deployed-app a img, .placeholder-image, {
+    .about-me-img-p img, #deployed-app a img, .placeholder-image {
         max-width: 50%;
     }
 }
@@ -432,7 +432,7 @@ hr {
         font-size: 12px;
     }
 
-    .about-me-img-p img, #deployed-app a img, .placeholder-image, {
+    .about-me-img-p img, #deployed-app a img, .placeholder-image {
         max-width: 50%;
     }
 }
