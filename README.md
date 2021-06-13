@@ -26,5 +26,6 @@ The following elements were included in my page:
 
 ## Screenshot
 
-![Screenshot of my website](./assets/images/portfolio-image.png)
+* Deployed: ![Screenshot of my website](./assets/images/portfolio-image.png)
+* Github: https://github.com/Faisal-Ali91/Portfolio-Advanced-CSS
 
