@@ -22,10 +22,12 @@ The following elements were included in my page:
 
 ## Link to Deploy
 
-[Portfolio: Faisal Ali](https://faisal-ali91.github.io/Portfolio-Advanced-CSS/) - https://faisal-ali91.github.io/Portfolio-Advanced-CSS/
+* Deployed: [Portfolio: Faisal Ali](https://faisal-ali91.github.io/Portfolio-Advanced-CSS/) - https://faisal-ali91.github.io/Portfolio-Advanced-CSS/
+
+* Github: https://github.com/Faisal-Ali91/Portfolio-Advanced-CSS
 
 ## Screenshot
 
-* Deployed: ![Screenshot of my website](./assets/images/portfolio-image.png)
-* Github: https://github.com/Faisal-Ali91/Portfolio-Advanced-CSS
+![Screenshot of my website](./assets/images/portfolio-image.png)
+
 
