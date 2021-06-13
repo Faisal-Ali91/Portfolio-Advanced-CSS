@@ -305,7 +305,7 @@ hr {
         padding-left: 60px;
     }
 
-    a {
+    nav ul li a {
         font-size: 17.6px;
     }
 
@@ -352,7 +352,7 @@ hr {
         padding-left: 55px;
     }
 
-    a {
+    nav ul li a {
         font-size: 13.6px;
     }
 
@@ -379,6 +379,10 @@ hr {
 
     .about-me-img-p img, #deployed-app a img, .placeholder-image {
         max-width: 50%;
+    }
+
+    #contact-info a {
+        font-size: 13.6px;
     }
 }
 
@@ -434,5 +438,9 @@ hr {
 
     .about-me-img-p img, #deployed-app a img, .placeholder-image {
         max-width: 50%;
+    }
+
+    #contact-info a {
+        font-size: 8.8px;
     }
 }
