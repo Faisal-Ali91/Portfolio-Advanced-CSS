@@ -175,11 +175,11 @@ img {
 }
 
 #deployed-app-image {
-    height: 450px;
-    width: 1075px;
+    height: 85%;
+    width: 98%;
     border: groove 5px black;
     border-radius: 15px;
-    margin-left: 30px;
+    margin: 1%;
 }
 
 h3 {
@@ -195,13 +195,16 @@ h3 {
 
 #deployed-app-text {
     position: absolute; /* so I can move text freely*/
-    top: 70%;
-    left: 5%;
+    top: 55%;
+    left: 1%;
     background: var(--header);
     padding: 1%;
+    padding-left: 5%;
+    padding-right: 2%;
     border: groove 5px black;
     border-radius: 15px;
     opacity: 0.7;
+    text-align: right;
 }
 
 .placeholder-app-section {
@@ -209,58 +212,47 @@ h3 {
    flex-wrap: wrap;
 }
 
+.placeholder-image {
+    border: groove 5px black;
+    border-radius: 15px;
+    height: 100%;
+    width: 47%;
+}
+
 .placeholder-app-group {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 500px;
-}
-
-.placeholder-image {
-    border: groove 5px black;
-    border-radius: 15px;
-    margin: 10px 15px 10px 15px;
+    height: 45%;
 }
 
 .placeholder-text-1 {
     position: absolute;
-    top: 70%;
-    left: 6%;
+    top: 15%;
+    left: 1%;
     background: var(--header);
     padding: 1%;
+    padding-left: 8%;
+    padding-right: 2%;
     border: groove 5px black;
     border-radius: 15px;
     opacity: 0.7;
+    text-align: right;
 }
 
 .placeholder-text-2 {
     position: absolute;
-    top: 70%;
-    right: -34%;
+    top: 15%;
+    right: 1%;
     background: var(--header);
+    padding: 1%;
+    padding-right: 8%;
+    padding-left: 2%;
     border: groove 5px black;
     border-radius: 15px;
     opacity: 0.7;
-    padding: 1%;
+    text-align: left;
 }  
-
-.placeholder-app {
-    position: relative;
-    width: 500px;
-    height: 284.8px;
-    margin-left: 30%;
-}
-
-.placeholder-text-3 {
-    position: absolute;
-    top: 78%;
-    right: 72%;
-    background: var(--header);
-    border: groove 5px black;
-    border-radius: 15px;
-    opacity: 0.7;
-    padding: 1%;
-}
 
 #contact-me {
     display: flex;
@@ -334,7 +326,7 @@ hr {
         font-size: 20px;
     }
 
-    .about-me-img-p img, #deployed-app a img, .placeholder-image {
+    .about-me-img-p img{
         max-width: 50%;
     }
 }
@@ -369,7 +361,7 @@ hr {
         font-size: 20.8px;
     }
 
-    .about-me-img-p p, #deployed-app-text p, .placeholder-text-1 p, .placeholder-text-2 p, .placeholder-text-3 p, p {
+    .about-me-img-p p, #deployed-app-text p, .placeholder-text-1 p, .placeholder-text-2 p, p {
         font-size: 12px;
     }
 
@@ -377,7 +369,7 @@ hr {
         font-size: 16px;
     }
 
-    .about-me-img-p img, #deployed-app a img, .placeholder-image {
+    .about-me-img-p img {
         max-width: 50%;
     }
 
@@ -402,15 +394,17 @@ hr {
     }
 
     nav ul li a {
-        font-size: 8.8px;
+        font-size: 7px;
     }
 
     li {
         margin-right: .25px;
     }
 
-    nav ul li a:hover, a {
-        font-size: 13.6px;
+    nav ul li a:hover {
+        font-size: 10px;
+        color: red;
+        text-decoration: underline black dotted;
     }
 
     .hero {
@@ -423,21 +417,19 @@ hr {
     }
 
     #deployed-app-text {
-        top: 70%;
-        left: 20%;
+        top: 45%;
     }
 
-    .placeholder-text-3 {
-        top: 55%;
-        left: 10%;
+    .placeholder-text-1, .placeholder-text-2 {
+        top: 20%;
     }
 
     h3 {
         font-size: 12px;
     }
-
-    .about-me-img-p img, #deployed-app a img, .placeholder-image {
-        max-width: 50%;
+    
+    .about-me-img-p p, #deployed-app-text p, .placeholder-text-1 p, .placeholder-text-2 p {
+        font-size: 8px;
     }
 
     #contact-info a {
